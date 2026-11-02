@@ -1,4 +1,5 @@
 import React from "react";
+import appImage from "../../assets/App-Image.avif";
 
 const ProjectCard = () => {
   return (
@@ -7,9 +8,9 @@ const ProjectCard = () => {
         <div>
           <div className="">
             <img
-              src="https://img.freepik.com/premium-photo/it-information-technology-wallpaper-hd-4k_7419-4529.jpg"
+              src={appImage}
               alt=""
-              className="h-48 w-full rounded-t-2xl object-cover sm:h-56"
+              className="h-48 w-full rounded-t-2xl object-fit sm:h-56"
             />
           </div>
           <div className=" flex flex-col gap-5 p-5 bg-[#0f172a] rounded-br-2xl rounded-bl-2xl">
@@ -24,14 +25,24 @@ const ProjectCard = () => {
             </p>
             <div className="flex flex-wrap gap-3">
               <p className="text-xs font-mono px-2.5 py-1 bg-cyan-500/10 text-cyan-400 rounded-md border border-cyan-500/20">
-                tech
+                HTML & CSS
               </p>
               <p className="text-xs font-mono px-2.5 py-1 bg-cyan-500/10 text-cyan-400 rounded-md border border-cyan-500/20">
-                Skills
+                JS
+              </p>
+              <p className="text-xs font-mono px-2.5 py-1 bg-cyan-500/10 text-cyan-400 rounded-md border border-cyan-500/20">
+                Tailwind CSS
+              </p>
+              <p className="text-xs font-mono px-2.5 py-1 bg-cyan-500/10 text-cyan-400 rounded-md border border-cyan-500/20">
+                React
               </p>
             </div>
             <div className="flex flex-wrap gap-x-5 gap-y-2 font-semibold text-[#ffffffe7]">
-              <a href="" className=" hover:text-[#2bd5ff]">
+              <a
+                href="https://github.com/suhailsalmanii/Ai-JobFit-App.git"
+                target="_blank"
+                className=" hover:text-[#2bd5ff]"
+              >
                 <i class="ri-github-line"></i>
                 <span className="p-2">Code</span>
               </a>

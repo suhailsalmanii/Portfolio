@@ -1,6 +1,7 @@
 import React from "react";
 import ButtonBlue from "../buttons/ButtonBlue";
 import ButtonGrey from "../buttons/ButtonGrey";
+import myResume from "../../assets/myResume.pdf";
 
 const Home = () => {
   return (
@@ -12,23 +13,35 @@ const Home = () => {
         </span>
         Available for Work
       </div>
-      <h1 className="text-4xl font-bold leading-tight sm:text-5xl lg:text-7xl">Hi, I'm Suhail Developer.</h1>
+      <h1 className="text-4xl font-bold leading-tight sm:text-5xl lg:text-7xl">
+        Hi, I'm Suhail Developer.
+      </h1>
       <h2 className="text-4xl font-bold leading-tight text-blue-200 opacity-50 sm:text-5xl lg:text-7xl">
         I build for the web
       </h2>
       <p className="whitespace-pre-line pt-5 text-base text-[#ffffffa4] sm:text-xl">
-        I am a{" "}
+        I am a
         <span className=" font-bold opacity-100 text-white px-1 ">
           Fresher Developer
         </span>
-        passionate about creating beautiful,{" "}
-        functional & user-centered digital expereinces
+        passionate about creating beautiful, <br /> functional & user-centered
+        digital expereinces
       </p>
       <div className="flex flex-wrap gap-3 pt-8 sm:gap-5">
         <a href="#project">
           <ButtonBlue name="View Project" icon="ri-arrow-right-s-line" />
         </a>
-        <ButtonGrey />
+        <button>
+          <div className="flex gap-2 px-5 py-3 rounded-lg group hover:text-[#2bd5ff] hover:border-[#2bd5ff]  text-[#dbe4e8e8] font-semibold border border-[#707b8e]">
+            <a
+              href={myResume}
+              target="_blank"
+              className="break-all text-lg text-[#ffffffe7] hover:text-[#2bd5ff]"
+            >
+              View Resume
+            </a>
+          </div>
+        </button>
       </div>
     </section>
   );

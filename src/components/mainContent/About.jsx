@@ -1,14 +1,16 @@
 import React from "react";
 import PageName from "./PageName";
 import myProfile from "../../assets/myProfile.png";
-import myResume from "../../assets/myResume.pdf";
 
 const About = () => {
   return (
     <section className="pt-24 sm:pt-32">
       <PageName name="About Me" icon="ri-user-line" />
 
-      <div id="about" className="scroll-mt-24 flex flex-col gap-10 md:flex-row md:items-center md:gap-12">
+      <div
+        id="about"
+        className="scroll-mt-24 flex flex-col gap-10 md:flex-row md:items-center md:gap-12"
+      >
         <div className="flex flex-col justify-center gap-8 text-base text-[#ffffffa4] md:w-1/2">
           <div className=" flex flex-col gap-3">
             <p>
@@ -38,22 +40,8 @@ const About = () => {
               </p>
             </div>
             <div className="flex gap-2">
-              <i className="ri-phone-fill text-[#0891b3]"></i>
-              <p className="text-lg  text-[#ffffffe7]">9717248186</p>
-            </div>
-            <div className="flex gap-2">
               <i className="ri-suitcase-line text-[#0891b3]"></i>
               <p className=" text-lg text-[#ffffffe7]">Actively Interviewing</p>
-            </div>
-            <div className="flex gap-2">
-              <i className=" ri-profile-line text-[#0891b3]"></i>
-              <a
-                href={myResume}
-                target="_blank"
-                className="break-all text-lg text-[#ffffffe7] hover:underline"
-              >
-                Resume.pdf
-              </a>
             </div>
           </div>
         </div>
