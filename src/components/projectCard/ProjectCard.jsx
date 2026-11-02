@@ -46,7 +46,10 @@ const ProjectCard = () => {
                 <i class="ri-github-line"></i>
                 <span className="p-2">Code</span>
               </a>
-              <a href="" className=" hover:text-[#2bd5ff]">
+              <a
+                href="https://ai-job-fit-app.vercel.app/"
+                className=" hover:text-[#2bd5ff]"
+              >
                 <i class="ri-eye-line"></i>
                 <span className="p-2">Live Demo</span>
               </a>
