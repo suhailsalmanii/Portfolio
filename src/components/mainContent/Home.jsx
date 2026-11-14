@@ -1,7 +1,7 @@
 import React from "react";
 import ButtonBlue from "../buttons/ButtonBlue";
 import ButtonGrey from "../buttons/ButtonGrey";
-import myResume from "../../assets/myResume.pdf";
+import myResume from "../../assets/Suhail Cv.pdf";
 
 const Home = () => {
   return (
